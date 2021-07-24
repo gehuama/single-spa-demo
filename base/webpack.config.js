@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = (webpackConfigEnv, argv) => {
   const orgName = "gehuama";
-  const defaultConfig = singleSpaDefaults({
+  const defaultConfig = singleSpaDefaults({ // @gehuama/root-config @gehuama/react
     orgName,
     projectName: "root-config",
     webpackConfigEnv,

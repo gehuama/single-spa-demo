@@ -1,11 +1,16 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
+    <router-link to="/">Home {{ a }}</router-link> |
     <router-link to="/about">About</router-link>
   </div>
   <router-view />
 </template>
-
+<script>
+export default {
+  props: ["a"],
+  setup() {},
+  }
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
